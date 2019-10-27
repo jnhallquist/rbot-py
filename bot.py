@@ -16,7 +16,13 @@ async def on_message(message):
         return
 
     if message.content.startswith('$rbot help'):
-        await message.author.send('TBA: HELP INFORMATION')
+        await message.author.send('''
+          rbot will respond to the following commands:
+
+          SET REMINDER: rbot will DM user to gather the information required to
+          set a new reminder. rbot will ask what the reminder is and when the 
+          user needs to be reminded of this task or event.
+          ''')
 
     if message.author == client.user:
         return
