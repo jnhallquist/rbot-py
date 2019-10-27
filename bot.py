@@ -15,7 +15,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
+    if message.content.startswith('$rbot help'):
+        await message.author.send('TBA: HELP INFORMATION')
 
 client.run(secrets["bot_token"])
